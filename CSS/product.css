@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IT+Moderna:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IT+Moderna:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IT+Moderna:wght@100..400&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(rgba(143, 139, 139, 0.6), rgba(0, 0, 0, 0.6));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.logo {
+  color: white;
+  font-size: 30px;
+  font-family: Tagesschrift;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 15px 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li :hover {
+  color: rgb(64, 123, 123);
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(1.05s);
+  transform: scaleY(1.5s);
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  font-family: Playwrite IT Moderna;
+}
+
+.product-row {
+  margin-left: 40px;
+  margin-bottom: 3em;
+  clear: both;
+}
+
+.product-row ul li {
+  color: white;
+}
+
+.price {
+  color: white;
+}
+.product-row h2 {
+  color: white;
+}
+
+.product {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+  margin-right: 2%;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+
+.product:nth-child(2n) {
+  margin-right: 0;
+}
+.product img {
+  width: 20%;
+  height: 20%;
+  display: block;
+  margin-bottom: 0.5em;
+  border: 1px solid #ccc;
+  padding: 3px;
+}
+h2 {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 1.6rem;
+  margin: 0 0 0.3em 0;
+}
+.price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0 0 0.7em 0;
+  font-family: IBM Plex Serif;
+}
+p {
+  color: rgb(255, 255, 255);
+  font-size: 1.05rem;
+  margin: 0 0 0.7em 0;
+  font-family: IBM Plex Serif;
+}
+ul {
+  margin-left: 1.4em;
+}
+
+footer {
+  background: var(--bg-color);
+  color: var(--text);
+  padding: 2rem 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+footer a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+footer a:hover {
+  color: var(--accent);
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-grid h4 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.social a {
+  font-size: 1.25rem;
+  margin-right: 0.75rem;
+}
+.bottom-bar {
+  border-top: 1px solid #222;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.watch-btn {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  background: linear-gradient(135deg, #1b1f2a, #2c3e50);
+  color: #f5f5f5;
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 600;
+  padding: 12px 26px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: background 0.4s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.watch-btn:hover {
+  background: linear-gradient(135deg, #2c3e50, #1b1f2a);
+  transform: scale(1.05);
+  box-shadow: 0 14px 30px rgba(44, 62, 80, 0.6);
+}
+
+/* Clock inside the button */
+.watch-face {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border: 3px solid #e0e0e0;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #1f2a3a 60%, #0e1014 100%);
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.1),
+    0 3px 6px rgba(0, 0, 0, 0.6);
+  flex-shrink: 0;
+}
+
+/* Hands */
+.hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%) rotate(0deg);
+  transform-origin: bottom center;
+  background-color: #f0f0f0;
+  border-radius: 2px;
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+.hour-hand {
+  width: 4px;
+  height: 14px;
+  background: linear-gradient(180deg, #bfc3c6, #888b8d);
+  z-index: 3;
+}
+
+.minute-hand {
+  width: 2px;
+  height: 20px;
+  background: linear-gradient(180deg, #ccc, #999);
+  z-index: 2;
+}
+
+.second-hand {
+  width: 1px;
+  height: 24px;
+  background: #c0392b;
+  z-index: 1;
+  border-radius: 1px;
+  box-shadow: 0 0 6px #c0392b;
+}
+
+/* Animations */
+@keyframes rotateHour {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+@keyframes rotateMinute {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+@keyframes rotateSecond {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+.watch-btn:hover .hour-hand {
+  animation: rotateHour 12s linear infinite;
+}
+.watch-btn:hover .minute-hand {
+  animation: rotateMinute 5s linear infinite;
+}
+.watch-btn:hover .second-hand {
+  animation: rotateSecond 1s linear infinite;
+}
+
+.cart-icon-container {
+  position: relative;
+  margin-left: 20px;
+}
+
+.cart-link {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-icon {
+  width: 30px;
+  height: 30px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(107%)
+    contrast(101%);
+  /* white cart icon; adjust as needed */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cart-link:hover .cart-icon {
+  transform: scale(1.1);
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: #c0392b;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  min-width: 20px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  user-select: none;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="CSS/Cart.css" />
+</head>
+<body>
+
+  <h1>Your Shopping Cart</h1>
+
+  <div class="back-container">
+  <a href="product.html" class="back-button">← Back to Products</a>
+</div>
+
+
+  <table id="cart-table" style="display:none;">
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Price ($)</th>
+        <th>Quantity</th>
+        <th>Subtotal ($)</th>
+      </tr>
+    </thead>
+    <tbody id="cart-body"></tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Total</td>
+        <td id="cart-total">0.00</td>
+      </tr>
+    </tfoot>
+  </table>
+  <button id="clear-cart-btn">Clear Cart</button>
+
+
+  <div id="empty-msg" class="empty-cart">Your cart is empty.</div>
+
+  <script src="Cart.js"></script>
+</body>
+</html>

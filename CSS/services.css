@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IT+Moderna:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(89, 88, 88, 0.6));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "IBM Plex Serif", serif;
+  color: white;
+  padding: 0 20px 40px;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 10px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: "Tagesschrift", cursive;
+  font-size: 30px;
+  color: white;
+  animation: tickingPulse 3s infinite ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.5s, transform 0.3s;
+}
+
+nav ul li a:hover {
+  color: rgb(64, 123, 123);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(64, 123, 123, 0.8);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+p {
+  margin-bottom: 30px;
+  font-family: "IBM Plex Serif", serif;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+ul.services-list {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+ul.services-list li {
+  margin: 15px 0;
+  padding: 15px 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: default;
+  transition: background 0.5s ease, box-shadow 0.5s ease, color 0.5s ease;
+  user-select: none;
+}
+
+ul.services-list li:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(64, 123, 123, 0.6),
+    rgba(255, 255, 255, 0.3),
+    rgba(64, 123, 123, 0.6)
+  );
+  color: #a7ffeb;
+  box-shadow: 0 0 15px #7ee8e8;
+}
+
+hr {
+  margin: 40px 0 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes tickingPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    color: #40a9a9;
+    text-shadow: 0 0 5px #40a9a9;
+  }
+  50% {
+    transform: scale(1.05);
+    color: #7ee8e8;
+    text-shadow: 0 0 15px #7ee8e8;
+  }
+}
+
+main {
+  margin-top: 100px;
+}
